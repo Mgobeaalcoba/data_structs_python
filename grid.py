@@ -19,7 +19,7 @@ class Grid():
     def __getwidth__(self):
         return len(self.data[0])
     
-    # Metodo para obtener un metodo en particular:
+    # Metodo para obtener un valor en particular:
     def __getitem__(self, r_index, c_index):
         return self.data[r_index][c_index]
     
