@@ -1,4 +1,9 @@
 # Lista de nodos... Por lo que necesitamos usar Node()
+# No tienen indices como los arrays o las list. Por lo que 
+# deben emularlos. 
+# Vamos a crear una variable auxiliar "probe" que funciona 
+# como un sonda o puntero temporal que recorre la lista 
+# consultando los datos. 
 
 from node import Node
 
