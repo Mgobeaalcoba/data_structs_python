@@ -256,3 +256,52 @@ Mostramos la lista
         current = current.next
 ```
 
+---------------------------------------
+
+**Circular Linked Structure**
+
+A diferencia de las linear linked structure en este caso el tail o ultimo nodo no apunta mas a None sino que apunta nuevamente al head o primer nodo. 
+
+Las listas enlazadas circulares tienen bastantes casos de uso interesantes:
+- Dar la vuelta al turno de cada jugador en un juego multijugador
+- Gestionar el ciclo de vida de la aplicación de un sistema operativo determinado
+- Implementando un montón de Fibonacci
+
+Una de las ventajas de las listas enlazadas circulares es que puede recorrer toda la lista comenzando en cualquier nodo. Dado que el último nodo apunta al headde la lista, debe asegurarse de dejar de atravesar cuando llegue al punto de partida. De lo contrario, terminarás en un bucle infinito.
+
+En términos de implementación, las listas enlazadas circulares son muy similares a la lista enlazada individualmente. La única diferencia es que puede definir el punto de partida cuando recorre la lista:
+
+Para generar el Cirle Linked List solo hay que poner esto y modificar algunas cosas de la clase Single Linked List...
+
+1- Su circular linked list
+
+```python
+class CircularLinkedList(LinkedList):
+    def __init__(self) -> None:
+        super().__init__()
+
+    def append(self, data):
+        super().append(data, self.head)
+```
+
+2- Modificar las primeras líneas del append así:
+
+```python
+def append(self, data, next = None):
+        node = Node(data, next)
+```
+
+3.- Modificar los whiles en la Linked List original de la siguiente forma:
+
+```python
+i = self.size
+            while current.next and i>=0:
+                current = current.next
+                i -= 1
+            current.next = node
+```
+
+--------------------------------------------------
+
+
+
