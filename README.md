@@ -303,5 +303,32 @@ i = self.size
 
 --------------------------------------------------
 
+**listas doblemente enlazadas**
+
+Las listas doblemente enlazadas se diferencian de las listas enlazadas individualmente en que tienen dos referencias:
+
+- El previous campo hace referencia al nodo anterior.
+- El next campo hace referencia al siguiente nodo.
+
+Este tipo de implementación le permitiría atravesar una lista en ambas direcciones en lugar de solo atravesar usando next. Puede utilizar next para avanzar y previous retroceder.
+
+--------------------------------------------
+
+**Stacks o pilas**
+
+Las pilas (stacks) son una estructura de datos donde tenemos una colección de elementos, y sólo podemos hacer dos cosas:
+
+- añadir un elemento al final de la pila
+- sacar el último elemento de la pila
+
+Una manera común de visualizar una pila es imaginando una torre de panqueques, donde una vez que ponemos un panqueque encima de otro, no podemos sacar el anterior hasta que se hayan sacado todos los que están encima.
+
+A pesar de su simplicidad, las pilas son estructuras relativamente comunes en ciertas áreas de la computación, en especial para implementar o simular evaluación de expresiones, recursión, scope, …
+
+LIFO (Last In First Out)
+
+Las pilas son estructuras de tipo LIFO, lo cual quiere decir que el último elemento añadido es siempre el primero en salir.
+
+De alguna forma, podemos decir que una pila es como si fuera una lista o array, en el sentido que es una colección, pero a diferencia de los arrays y otras colecciones, en las pilas solo accedemos al elemento que esté “encima de la pila”, el último elemento. Nunca manipulamos ni accedemos a valores por debajo del último elemento.
 
 
