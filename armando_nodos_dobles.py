@@ -18,3 +18,13 @@ while probe != None:
 
 # De la forma anterior estamos recorriendo el nodo de forma inversa. Es decir
 # Lo recorremos iterando el nodo previo. 
+
+"""
+C:\Users\mgobea\Documents\develop\Python\estructuras_de_datos(main -> origin)
+(venv) λ python3 armando_nodos_dobles.py
+5
+4
+3
+2
+1
+"""
