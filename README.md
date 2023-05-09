@@ -331,4 +331,28 @@ Las pilas son estructuras de tipo LIFO, lo cual quiere decir que el último elem
 
 De alguna forma, podemos decir que una pila es como si fuera una lista o array, en el sentido que es una colección, pero a diferencia de los arrays y otras colecciones, en las pilas solo accedemos al elemento que esté “encima de la pila”, el último elemento. Nunca manipulamos ni accedemos a valores por debajo del último elemento.
 
+--------------------------------------------
 
+**Queues o colas**
+
+Atiendo al principio FIFO (First In First Out)
+
+Dos conceptos importantes:
+
+- Rear: ultimo elemento que entró a la fila
+
+- Front: Primer elemento que entró a la fila
+
+Variante: Priority queues: o colas de prioridad. FIFO con elementos que tienen prioridad sobre otros. 
+
+Quizas algun elemento intermedio va a ser atendido antes que front. Ejemplo: las filas de abordaje a aviones. Si tenés priority pass pasas antes. 
+
+Metodos de las queues:
+
+- add(): añadir a rear
+- pop(): remover front
+
+Vamos a armar tres queues distintas: 
+
+- Una basada en listas llamada list_based_queue.py
+- 
