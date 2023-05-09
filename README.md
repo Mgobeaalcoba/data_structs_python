@@ -355,4 +355,10 @@ Metodos de las queues:
 Vamos a armar tres queues distintas: 
 
 - Una basada en listas llamada list_based_queue.py
-- 
+- Otro basado en dos Stacks y llamado stack_based_queue
+
+Diferencias entre stacks y queues:
+
+<img src="./Captura1.PNG">
+
+
